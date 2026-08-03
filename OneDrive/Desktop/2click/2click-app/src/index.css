@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family:
+      "Manrope",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+  }
+}
+
+.bg-gray-dark {
+  background-color: #0f172a;
+}
+
+.text-primary {
+  color: #0d9488;
+}
+
+.bg-primary {
+  background-color: #0d9488;
+}
+
+.border-primary {
+  border-color: #0d9488;
+}
+
+/* Modern Glassmorphism & High-Quality Graphic Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark .glass-card {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+}
+
+/* Hover Elevation & Soft Glowing Shadow */
+.card-hover-effect {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 24px -6px rgba(13, 148, 136, 0.15),
+    0 4px 12px -2px rgba(99, 102, 241, 0.08);
+}
+
+/* Metallic Tech Mesh Banner */
+.tech-banner-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0d9488 100%);
+}
+
+/* Ambient Subtle Glow Backdrop */
+.glow-backdrop-teal {
+  box-shadow: 0 0 40px -5px rgba(13, 148, 136, 0.25);
+}
+
+.glow-backdrop-indigo {
+  box-shadow: 0 0 40px -5px rgba(99, 102, 241, 0.25);
+}
+
+/* Custom Scrollbar Utilities */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(13, 148, 136, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(13, 148, 136, 0.8);
+}
+
+/* Tailstore pill button styling */
+.btn-tailstore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-tailstore-primary {
+  background-color: #0d9488;
+  color: #ffffff;
+  border: 1px solid #0d9488;
+}
+
+.btn-tailstore-primary:hover {
+  background-color: transparent;
+  color: #0d9488;
+}
+
+.btn-tailstore-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-tailstore-outline:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+/* Scrollbar Utilities for Clean Laptop & Mobile Responsiveness */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Ensure smooth image & media responsive behavior */
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+/* Prevent unwanted horizontal viewport overflow on laptop screens */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Smooth font size and layout auto-adjustment */
+html {
+  transition: font-size 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hardware accelerated transition wrapper */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
+/* Image loading skeleton pulse background for slow networks */
+.img-skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeletonPulse 1.5s infinite ease-in-out;
+}
+
+@keyframes skeletonPulse {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Fluid responsive auto-expansion for buttons, badges, and input controls */
+button,
+input,
+select,
+textarea,
+.badge {
+  max-width: 100%;
+}
+
+/* Ensure flex containers auto-adjust and wrap cleanly on text size scaling */
+.auto-layout-adjust {
+  min-height: min-content;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Mobile bottom navbar clearance to prevent fixed nav overlap on small screens */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 4.5rem; /* ~72px clearance for fixed MobileBottomNavBar */
+  }
+
+  /* Safe touch area spacing for mobile cards & modal footers */
+  .mobile-safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
+  }
+}
