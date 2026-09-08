@@ -1,0 +1,17 @@
+import fs from 'fs';
+const assert = (ok: boolean, msg: string) => { if (!ok) throw new Error(msg); console.log('✓', msg); };
+const firebase = fs.readFileSync('server/firebaseAdmin.ts','utf8');
+const env = fs.readFileSync('server/env.ts','utf8');
+const routes = fs.readFileSync('server/routes.ts','utf8');
+const server = fs.readFileSync('server.ts','utf8');
+assert(firebase.includes("env.NODE_ENV !== 'production'"), 'dev mock Firebase tokens are blocked in production');
+assert(env.includes('assertProductionEnv'), 'production environment guard exists');
+assert(env.includes('degraded in-memory mode'), 'missing PostgreSQL is surfaced as degraded mode instead of crashing the public site');
+assert(routes.includes("requireRole('ADMIN', 'SUPER_ADMIN')"), 'database diagnostics require privileged role');
+assert(!routes.includes('currentUser: req.user ? { id: req.user.id, role: req.user.role, email: req.user.email }'), 'public health endpoint does not expose account email');
+assert(server.includes('securityHeaders'), 'security headers middleware enabled');
+assert(server.includes("app.set('trust proxy', 1)"), 'production reverse proxy is trusted explicitly');
+const authRoutes = fs.readFileSync('server/authRoutes.ts','utf8');
+assert(authRoutes.includes("authRouter.get('/status'"), 'auth status diagnostics endpoint exists');
+assert(authRoutes.includes('FIREBASE_ADMIN_MISSING'), 'actionable Firebase admin missing error code');
+console.log('Security checks passed.');

@@ -1,0 +1,23 @@
+import { useState, useEffect } from 'react';
+
+/**
+ * Scroll position tracking hook for header state & elevation
+ */
+export function useScrollPosition() {
+  const [scrollY, setScrollY] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrollY(currentScrollY);
+      setIsScrolled(currentScrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return { scrollY, isScrolled };
+}

@@ -1,0 +1,10 @@
+import fs from 'fs';
+import { store } from '../store';
+const assert = (ok: boolean, msg: string) => { if (!ok) throw new Error(msg); console.log('✓', msg); };
+const before = store.exportRuntimeState();
+assert(Boolean(before && typeof before === 'object'), 'runtime state exports');
+store.importRuntimeState(before);
+const after = store.exportRuntimeState();
+assert(JSON.stringify(before) === JSON.stringify(after), 'runtime state round-trips without loss');
+assert(fs.existsSync('src/db/migrations/004_runtime_persistence.sql'), 'runtime persistence migration exists');
+console.log('Persistence serialization checks passed.');

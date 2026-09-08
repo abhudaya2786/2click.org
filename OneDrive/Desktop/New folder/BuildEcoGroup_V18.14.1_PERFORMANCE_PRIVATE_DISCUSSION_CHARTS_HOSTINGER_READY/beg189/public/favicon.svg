@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="favNavyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2D4C"/>
+      <stop offset="100%" stop-color="#0E192D"/>
+    </linearGradient>
+    <linearGradient id="favOrangeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded App Tile Background -->
+  <rect width="128" height="128" rx="28" fill="#0E192D"/>
+  
+  <!-- Subtle Border Ring -->
+  <rect x="1" y="1" width="126" height="126" rx="27" fill="none" stroke="#2A3E5C" stroke-width="1.5"/>
+
+  <g transform="translate(14, 12)">
+    <!-- Base Curve Foundation -->
+    <path d="M 12 90 C 35 84 65 84 88 90 C 78 87 25 87 12 90 Z" fill="#3A4D6B" />
+
+    <!-- Back Dark Tower with Angled Crown -->
+    <path d="M 38 28 L 52 16 L 60 22 L 60 88 L 38 88 Z" fill="#2E405E" />
+    <path d="M 60 22 L 68 28 L 68 88 L 60 88 Z" fill="#1E2E48" />
+
+    <!-- Tower 1 Windows -->
+    <rect x="42" y="36" width="5" height="7" rx="1" fill="#FFFFFF" fill-opacity="0.3" />
+    <rect x="50" y="36" width="5" height="7" rx="1" fill="#FFFFFF" fill-opacity="0.3" />
+    <rect x="42" y="48" width="5" height="7" rx="1" fill="#FFFFFF" fill-opacity="0.3" />
+    <rect x="50" y="48" width="5" height="7" rx="1" fill="#FFFFFF" fill-opacity="0.3" />
+
+    <!-- Center Orange Tower -->
+    <path d="M 33 44 L 44 38 L 44 88 L 33 88 Z" fill="#EA580C" />
+    <rect x="36" y="48" width="5" height="5" rx="1" fill="#FEF08A" />
+    <rect x="36" y="57" width="5" height="5" rx="1" fill="#FEF08A" />
+    <rect x="36" y="66" width="5" height="5" rx="1" fill="#FEF08A" />
+    <rect x="36" y="75" width="5" height="5" rx="1" fill="#FEF08A" />
+
+    <!-- Front Green Eco Tower -->
+    <path d="M 47 52 L 64 52 L 64 88 L 47 88 Z" fill="#00A859" />
+    <rect x="50" y="56" width="4.5" height="5" rx="0.5" fill="#FFFFFF" />
+    <rect x="56" y="56" width="4.5" height="5" rx="0.5" fill="#FFFFFF" />
+    <rect x="50" y="64" width="4.5" height="5" rx="0.5" fill="#FFFFFF" />
+    <rect x="56" y="64" width="4.5" height="5" rx="0.5" fill="#FFFFFF" />
+    <rect x="50" y="72" width="4.5" height="5" rx="0.5" fill="#FFFFFF" />
+    <rect x="56" y="72" width="4.5" height="5" rx="0.5" fill="#FFFFFF" />
+    <rect x="50" y="80" width="4.5" height="5" rx="0.5" fill="#FFFFFF" />
+    <rect x="56" y="80" width="4.5" height="5" rx="0.5" fill="#FFFFFF" />
+
+    <!-- Upward Orange Arrow Swoosh -->
+    <path d="M 52 90 C 68 95 85 91 93 80 C 103 65 106 38 107 18 L 100 24 L 114 12 L 110 32 L 105 26 C 102 42 98 68 87 81 C 79 91 66 94 52 90 Z" fill="url(#favOrangeGrad)" />
+
+    <!-- Leaf Motif Accent -->
+    <path d="M 72 74 C 72 63 84 50 94 50 C 94 60 84 73 72 74 Z" fill="#00A859" />
+    <path d="M 74 72 C 79 63 85 57 91 53" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+</svg>

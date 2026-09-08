@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /dashboard/
+Disallow: /marketplace
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Disallow: /track/
+Disallow: /cases/
+
+Sitemap: https://www.buildecogroup.com/sitemap.xml

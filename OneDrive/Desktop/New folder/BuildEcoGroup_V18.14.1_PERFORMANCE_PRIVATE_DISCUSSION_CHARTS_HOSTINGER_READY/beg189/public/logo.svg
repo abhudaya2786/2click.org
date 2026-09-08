@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 180" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Building & Gradient definitions -->
+    <linearGradient id="towerNavyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2D4C"/>
+      <stop offset="100%" stop-color="#0E192D"/>
+    </linearGradient>
+    <linearGradient id="towerSlateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A4D6B"/>
+      <stop offset="100%" stop-color="#1E2E48"/>
+    </linearGradient>
+    <linearGradient id="orangeArrowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="ecoGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A859"/>
+      <stop offset="100%" stop-color="#008044"/>
+    </linearGradient>
+  </defs>
+
+  <g id="logo-mark-and-text">
+    <!-- ==================== "Bu" ==================== -->
+    <!-- B -->
+    <path d="M 40 38 L 84 38 C 96 38 105 44 105 54 C 105 60 101 65 94 68 C 103 71 108 77 108 86 C 108 97 97 104 84 104 L 40 104 Z M 55 49 L 55 64 L 81 64 C 86 64 90 61 90 56.5 C 90 52 86 49 81 49 Z M 55 75 L 55 93 L 83 93 C 89 93 93 89.5 93 84 C 93 78.5 89 75 83 75 Z" fill="#14243B" />
+    
+    <!-- u -->
+    <path d="M 118 56 L 132 56 L 132 86 C 132 94 136 96 142 96 C 148 96 153 93 153 85 L 153 56 L 167 56 L 167 104 L 154 104 L 153 96.5 C 149 101.5 143 105 135 105 C 123 105 118 97 118 85 Z" fill="#14243B" />
+
+    <!-- ==================== SKYSCRAPER BUILDINGS ("ild") ==================== -->
+    <g id="buildings-cluster">
+      <!-- Base Horizon Ground Line Curve -->
+      <path d="M 148 108 C 180 102 215 102 245 108 C 235 106 175 105 148 108 Z" fill="#14243B" />
+      
+      <!-- Back Tower (Dark Slate Skyscraper with Angled Crown) -->
+      <path d="M 179 24 L 193 13 L 201 19 L 201 104 L 179 104 Z" fill="url(#towerNavyGrad)" />
+      <!-- Tower Right Facet -->
+      <path d="M 201 19 L 210 26 L 210 104 L 201 104 Z" fill="url(#towerSlateGrad)" />
+      <!-- Dark Tower Windows (Subtle) -->
+      <rect x="183" y="32" width="5" height="7" rx="1" fill="#FFFFFF" fill-opacity="0.15" />
+      <rect x="191" y="32" width="5" height="7" rx="1" fill="#FFFFFF" fill-opacity="0.15" />
+      <rect x="183" y="44" width="5" height="7" rx="1" fill="#FFFFFF" fill-opacity="0.15" />
+      <rect x="191" y="44" width="5" height="7" rx="1" fill="#FFFFFF" fill-opacity="0.15" />
+
+      <!-- Center Tower (Warm Orange Spire & Glow) -->
+      <path d="M 175 42 L 187 36 L 187 104 L 175 104 Z" fill="#EA580C" />
+      <rect x="178" y="46" width="6" height="6" rx="1" fill="#FEF08A" />
+      <rect x="178" y="56" width="6" height="6" rx="1" fill="#FEF08A" />
+      <rect x="178" y="66" width="6" height="6" rx="1" fill="#FEF08A" />
+      <rect x="178" y="76" width="6" height="6" rx="1" fill="#FEF08A" />
+      <rect x="178" y="86" width="6" height="6" rx="1" fill="#FEF08A" />
+      <rect x="178" y="96" width="6" height="6" rx="1" fill="#FEF08A" />
+
+      <!-- Front Eco-Green Tower with Grid Panes -->
+      <path d="M 189 50 L 205 50 L 205 104 L 189 104 Z" fill="#00A859" />
+      <rect x="192" y="55" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="198" y="55" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="192" y="64" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="198" y="64" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="192" y="73" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="198" y="73" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="192" y="82" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="198" y="82" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="192" y="91" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+      <rect x="198" y="91" width="4.5" height="5" rx="0.5" fill="#FFFFFF" fill-opacity="0.9" />
+    </g>
+
+    <!-- ==================== "d" ==================== -->
+    <!-- d -->
+    <path d="M 235 38 L 249 38 L 249 61 C 253.5 56.5 259 54 267 54 C 281 54 291 64 291 80 C 291 95 281 105 267 105 C 259 105 253.5 102.5 249 97.5 L 249 104 L 235 104 Z M 249 79.5 C 249 88.5 254 93.5 262.5 93.5 C 271 93.5 276.5 88 276.5 79.5 C 276.5 71 271 65.5 262.5 65.5 C 254 65.5 249 70.5 249 79.5 Z" fill="#14243B" />
+
+    <!-- ==================== ORANGE UPWARD ARROW SWOOSH ==================== -->
+    <!-- Swoosh arc starting at base of build, flying up above Eco -->
+    <path d="M 198 107 C 235 116 280 114 305 98 C 340 76 390 35 418 17 L 413 25 L 434 11 L 419 32 L 416 26 C 390 43 340 84 303 104 C 272 121 228 122 198 107 Z" fill="url(#orangeArrowGrad)" />
+
+    <!-- ==================== "Eco" (Vibrant Green with Leaf in 'o') ==================== -->
+    <!-- E -->
+    <path d="M 310 40 L 354 40 L 354 52 L 324 52 L 324 66 L 349 66 L 349 77 L 324 77 L 324 92 L 355 92 L 355 104 L 310 104 Z" fill="#00A859" />
+    
+    <!-- c -->
+    <path d="M 397 66 C 393 59 385 54.5 375 54.5 C 362 54.5 352 64.5 352 80 C 352 95 362 105 375 105 C 385 105 393 100 397 93 L 386 86 C 383 89.5 379 92 375 92 C 369 92 365 87 365 80 C 365 72.5 369 67.5 375 67.5 C 379 67.5 383 70 386 73 Z" fill="#00A859" />
+
+    <!-- o with embedded Eco Leaf Motif inside counter -->
+    <g id="eco-leaf-o">
+      <!-- Outer Ring of 'o' -->
+      <path d="M 429 54 C 444 54 456 65.5 456 79.5 C 456 94 444 105 429 105 C 414 105 402 94 402 79.5 C 402 65.5 414 54 429 54 Z M 429 65.5 C 420.5 65.5 414.5 71.5 414.5 79.5 C 414.5 87.5 420.5 93.5 429 93.5 C 437.5 93.5 443.5 87.5 443.5 79.5 C 443.5 71.5 437.5 65.5 429 65.5 Z" fill="#00A859" />
+      
+      <!-- Leaf shape inside counter -->
+      <path d="M 423 88 C 423 79 432 68 440 68 C 440 76 432 87 423 88 Z" fill="#00A859" />
+      <path d="M 424 87 C 428 79 433 74 438 70" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" />
+    </g>
+
+    <!-- ==================== "Group" (Navy with Shopping Cart in 'p') ==================== -->
+    <!-- G -->
+    <path d="M 502 60 C 496 55.5 487 52 476 52 C 458 52 445 64 445 78.5 C 445 93.5 458 105 477 105 C 491 105 500 98 504 88 L 476 88 L 476 77 L 516 77 L 516 101 C 506 108 493 114 476 114 C 452 114 433 98 433 78.5 C 433 59 452 43 476 43 C 491 43 504 49 512 56 Z" fill="#14243B" />
+
+    <!-- r -->
+    <path d="M 522 56 L 535 56 L 535 66 C 538 58.5 544 55 552 55 L 554 55 L 554 69 C 552 68.5 550 68.5 548 68.5 C 541 68.5 536 73 536 82 L 536 104 L 522 104 Z" fill="#14243B" />
+
+    <!-- o -->
+    <path d="M 577 54 C 591.5 54 603 65.5 603 79.5 C 603 94 591.5 105 577 105 C 562.5 105 551 94 551 79.5 C 551 65.5 562.5 54 577 54 Z M 577 66 C 569 66 564 72 564 79.5 C 564 87 569 93 577 93 C 585 93 590 87 590 79.5 C 590 72 585 66 577 66 Z" fill="#14243B" />
+
+    <!-- u -->
+    <path d="M 610 56 L 623 56 L 623 85 C 623 93 627 96 633 96 C 639 96 644 93 644 85 L 644 56 L 657 56 L 657 104 L 645 104 L 644 97 C 640 102 635 105 627 105 C 615 105 610 97 610 85 Z" fill="#14243B" />
+
+    <!-- p with Orange Shopping Cart Mart Icon inside counter -->
+    <g id="group-p-with-cart">
+      <!-- Main 'p' letter -->
+      <path d="M 664 56 L 677 56 L 677 62.5 C 681 57 687 54 695 54 C 708 54 718 64.5 718 79.5 C 718 94.5 708 105 695 105 C 687 105 681 101.5 677 96 L 677 124 L 664 124 Z M 677 79.5 C 677 87.5 682.5 93 690.5 93 C 698.5 93 704 87.5 704 79.5 C 704 71.5 698.5 66 690.5 66 C 682.5 66 677 71.5 677 79.5 Z" fill="#14243B" />
+
+      <!-- Orange Shopping Cart in counter of 'p' -->
+      <!-- Cart Basket -->
+      <path d="M 683 72 L 699 72 L 696 82 L 686 82 Z" fill="none" stroke="#F59E0B" stroke-width="1.4" stroke-linejoin="round" />
+      <!-- Cart Handle -->
+      <path d="M 680 70 L 683 72" stroke="#F59E0B" stroke-width="1.4" stroke-linecap="round" />
+      <!-- Cart Grid lines -->
+      <line x1="687" y1="72" x2="688" y2="82" stroke="#F59E0B" stroke-width="0.9" />
+      <line x1="692" y1="72" x2="693" y2="82" stroke="#F59E0B" stroke-width="0.9" />
+      <line x1="684.5" y1="77" x2="697.5" y2="77" stroke="#F59E0B" stroke-width="0.9" />
+      <!-- Cart Wheels -->
+      <circle cx="688" cy="85.5" r="1.3" fill="#F59E0B" />
+      <circle cx="695" cy="85.5" r="1.3" fill="#F59E0B" />
+    </g>
+
+    <!-- ==================== TAGLINE (Property • Land • Construction • Mart) ==================== -->
+    <g id="tagline" font-family="'Plus Jakarta Sans', 'Manrope', system-ui, sans-serif" font-size="17" font-weight="600" letter-spacing="1.5">
+      <!-- Text Items -->
+      <text x="180" y="152" fill="#24334A">Property</text>
+      <circle cx="280" cy="146" r="3.2" fill="#00A859" />
+      
+      <text x="306" y="152" fill="#24334A">Land</text>
+      <circle cx="370" cy="146" r="3.2" fill="#00A859" />
+
+      <text x="396" y="152" fill="#24334A">Construction</text>
+      <circle cx="536" cy="146" r="3.2" fill="#00A859" />
+
+      <text x="562" y="152" fill="#24334A">Mart</text>
+    </g>
+  </g>
+</svg>

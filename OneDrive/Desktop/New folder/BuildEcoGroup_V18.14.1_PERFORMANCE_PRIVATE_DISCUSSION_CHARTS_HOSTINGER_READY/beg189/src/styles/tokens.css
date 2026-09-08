@@ -1,0 +1,80 @@
+:root {
+  /* BuildEcoGroup V18.10 — Premium Eco Editorial */
+  --color-background: #F8F5EE;
+  --color-surface: #FFFEFB;
+  --color-surface-muted: #F1EEE6;
+  --color-surface-subtle: #E7EFE9;
+  --color-surface-overlay: rgba(20, 35, 31, 0.68);
+
+  --color-primary: #094B37;
+  --color-primary-hover: #063B2B;
+  --color-primary-active: #052F22;
+  --color-primary-subtle: #E7F0EA;
+  --color-primary-border: #B8D0C2;
+  --color-primary-light: #2A7458;
+
+  --color-accent-warm: #A66638;
+  --color-accent-warm-hover: #86502A;
+  --color-accent-warm-subtle: #F7ECE2;
+  --color-accent-purple: #C78348;
+  --color-accent-purple-hover: #A96833;
+  --color-accent-purple-subtle: #F7ECE2;
+  --color-accent-purple-border: #E5C7AA;
+
+  --color-brand-brown: #25372F;
+  --color-brand-brown-hover: #1B2923;
+  --color-brand-brown-subtle: #EAF1EC;
+  --color-brand-brown-border: #CBD9D1;
+  --color-brand-brown-dark: #14231F;
+
+  --color-brand-navy: #14231F;
+  --color-brand-navy-deep: #0E1916;
+  --color-brand-navy-border: #2E453B;
+  --color-brand-navy-panel: #1A2D27;
+  --color-arch-accent-light: #E7C19E;
+  --color-arch-accent-sky: #A9C8B7;
+  --color-arch-muted-on-navy: #C5D2CC;
+  --color-arch-grid: rgba(31, 90, 69, 0.08);
+
+  --color-text: #173127;
+  --color-text-secondary: #3B4A43;
+  --color-text-muted: #68736D;
+  --color-text-subtle: #829089;
+  --color-text-inverse: #FFFFFF;
+
+  --color-border: #DED8CC;
+  --color-border-subtle: #EEE9DF;
+  --color-border-strong: #C9C1B4;
+  --color-border-focus: #0B5138;
+
+  --color-success: #1F5A45;
+  --color-success-subtle: #EAF1EC;
+  --color-warning: #B56D2E;
+  --color-warning-subtle: #FAEEDC;
+  --color-danger: #B83B3B;
+  --color-danger-subtle: #FDF0F0;
+  --color-info: #416A58;
+  --color-info-subtle: #EAF1EC;
+
+  --shadow-sm: 0 1px 2px rgba(20, 35, 31, 0.05), 0 4px 12px rgba(20, 35, 31, 0.03);
+  --shadow-md: 0 8px 18px rgba(20, 35, 31, 0.07), 0 22px 54px rgba(20, 35, 31, 0.05);
+  --shadow-lg: 0 14px 34px rgba(20, 35, 31, 0.09), 0 34px 80px rgba(20, 35, 31, 0.07);
+  --shadow-xl: 0 22px 50px rgba(20, 35, 31, 0.11), 0 48px 110px rgba(20, 35, 31, 0.08);
+  --shadow-inner: inset 0 2px 4px rgba(20, 35, 31, 0.04);
+
+  --radius-xs: 4px;
+  --radius-sm: 7px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 9999px;
+
+  --container-max-width: 1320px;
+  --container-compact-width: 1080px;
+  --header-height-desktop: 72px;
+  --header-height-mobile: 62px;
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
