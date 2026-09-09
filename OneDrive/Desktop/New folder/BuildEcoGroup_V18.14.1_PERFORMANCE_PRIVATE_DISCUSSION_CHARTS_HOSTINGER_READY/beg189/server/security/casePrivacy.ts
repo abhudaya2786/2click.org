@@ -12,7 +12,8 @@ export function sanitizeCaseForRole(
   caseRecord: CaseRecord,
   role?: SafeUser['role']
 ): CaseRecord | RoleSafeCaseRecord {
-  if (role !== 'CONSULTANT') return caseRecord;
+  // Consultants and vendors work via Case ID and must not receive direct customer contact.
+  if (role !== 'CONSULTANT' && role !== 'VENDOR') return caseRecord;
   const { clientEmail: _clientEmail, clientPhone: _clientPhone, ...caseWithoutDirectContact } = caseRecord;
   return caseWithoutDirectContact;
 }

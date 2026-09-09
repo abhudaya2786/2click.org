@@ -34,7 +34,7 @@ export const ABBHUDAYA_PRATAP_PROFILE: ExpertProfile = {
   title: 'Director, Build Eco Group Private Limited',
   designation: 'Entrepreneur · Cisco Network & Infrastructure Specialist',
   experienceLabel: '15+ Years Experience',
-  photoUrl: '/assets/consultants/abbhudaya-pratap.jpg',
+  photoUrl: '/assets/team-photos/abbhudaya-pratap.jpg',
   city: 'Lucknow',
   state: 'Uttar Pradesh',
   intro: [
@@ -116,7 +116,7 @@ export const ABHISHEK_MISHRA_PROFILE: ExpertProfile = {
   title: 'Property Expert & Strategic Advisor',
   designation: 'Land Management & Strategic Property Advisory',
   experienceLabel: '21+ Years Experience',
-  photoUrl: '/assets/consultants/abhishek-mishra-headshot.png',
+  photoUrl: '/assets/team-photos/abhishek-mishra-headshot.png',
   city: 'Gorakhpur',
   state: 'Uttar Pradesh',
   intro: [

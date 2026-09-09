@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BarChart3, X } from 'lucide-react';
-import { getAnalyticsConsent, setAnalyticsConsent } from '../../lib/analytics';
+import { getAnalyticsConsent, setAnalyticsConsent } from '../lib/analytics';
 
 export const AnalyticsConsent: React.FC = () => {
   const [visible, setVisible] = useState(() => getAnalyticsConsent() === null);

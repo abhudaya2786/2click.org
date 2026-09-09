@@ -7,7 +7,7 @@ import { PublicLayout } from './layouts/PublicLayout';
 import { AuthLayout } from './layouts/AuthLayout';
 import { DashboardLayout } from './layouts/DashboardLayout';
 import { ROUTES } from './lib/routes';
-import { AnalyticsConsent } from './components/analytics/AnalyticsConsent';
+import { AnalyticsConsent } from './components/AnalyticsConsent';
 import { capturePageView } from './lib/analytics';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { PageSeo } from './components/seo/PageSeo';

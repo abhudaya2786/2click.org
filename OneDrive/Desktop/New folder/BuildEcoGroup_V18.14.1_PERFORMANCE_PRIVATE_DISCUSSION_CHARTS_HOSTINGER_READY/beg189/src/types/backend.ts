@@ -422,7 +422,7 @@ export interface SafeUser {
   id: string;
   email: string;
   fullName: string;
-  role: 'CUSTOMER' | 'CONSULTANT' | 'EMPLOYEE' | 'ADMIN' | 'SUPER_ADMIN';
+  role: 'CUSTOMER' | 'CONSULTANT' | 'VENDOR' | 'EMPLOYEE' | 'ADMIN' | 'SUPER_ADMIN';
   phone?: string;
   avatarUrl?: string;
   status: 'ACTIVE' | 'PENDING_VERIFICATION' | 'SUSPENDED' | 'DISABLED';

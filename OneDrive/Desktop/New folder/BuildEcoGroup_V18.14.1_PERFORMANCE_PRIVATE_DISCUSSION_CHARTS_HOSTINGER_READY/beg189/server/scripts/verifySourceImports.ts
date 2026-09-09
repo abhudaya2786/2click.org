@@ -22,7 +22,19 @@ const CRITICAL_FILES = [
 ];
 
 function walk(dir: string, files: string[] = []): string[] {
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+  let entries: fs.Dirent[];
+  try {
+    entries = fs.readdirSync(dir, { withFileTypes: true });
+  } catch (error: unknown) {
+    const code = error && typeof error === 'object' && 'code' in error ? String((error as { code?: string }).code) : '';
+    // Hostinger build sandboxes can deny scandir on some paths; skip instead of hard-failing the whole build.
+    if (code === 'EACCES' || code === 'EPERM') {
+      console.warn(`verify:imports skipped unreadable directory: ${path.relative(ROOT, dir)} (${code})`);
+      return files;
+    }
+    throw error;
+  }
+  for (const entry of entries) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) walk(full, files);
     else if (/\.(tsx?|jsx?)$/.test(entry.name)) files.push(full);
